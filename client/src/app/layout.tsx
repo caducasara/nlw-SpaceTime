@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
       >
-        <main className="grid h-screen grid-cols-2">
+        <main className="grid h-screen max-h-screen grid-cols-2">
           {/* Left Section */}
           <section className="itens-start relative flex flex-col justify-between overflow-hidden border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover px-28 py-16">
             {/* Blur */}
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </section>
 
           {/* Right Section */}
-          <section className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
+          <section className="flex flex-col overflow-y-scroll bg-[url(../assets/bg-stars.svg)] bg-cover">
             {children}
           </section>
         </main>

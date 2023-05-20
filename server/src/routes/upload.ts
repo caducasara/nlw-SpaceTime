@@ -1,7 +1,5 @@
-import axios from 'axios'
 import { FastifyInstance } from 'fastify'
-import { util, z } from 'zod'
-import { prisma } from '../lib/prisma'
+
 import { randomUUID } from 'crypto'
 import { extname, resolve } from 'path'
 import { createWriteStream } from 'fs'

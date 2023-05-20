@@ -54,6 +54,7 @@ export default function Layout() {
           contentStyle: {
             backgroundColor: 'transparent',
           },
+          animation: 'fade',
         }}
       >
         {/* Prop Redirect: Recebe um valor boolean que quando verdadeiro redireciona para a proxima rota, que esta logo abaixo */}
